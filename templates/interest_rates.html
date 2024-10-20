@@ -1,0 +1,32 @@
+<html>
+<style>
+    #joke {
+        display: none;
+    }
+</style>
+
+<body>
+    <form action="/" method="post">
+        <p>Enter Sing to US:</p>
+        <p><input type="number" step="0.01" name="rates"></p>
+        <p><input type="submit" value="submit"></p>
+    </form>
+    <p> the predicted DBS share price is {{result}} </p>
+
+    <hr>
+    <button onclick="showJoke()">Click me for a joke</button>
+    <div id="joke">
+        <p>Why did the Singaporean cross the road?</p>
+        <p>
+            To get to the other side... and then make a U-turn because he missed the ERP gantry!
+        </p>
+    </div>
+
+    <script>
+        function showJoke() {
+            document.getElementById("joke").style.display = "block";
+        }
+    </script>
+</body>
+
+</html>
