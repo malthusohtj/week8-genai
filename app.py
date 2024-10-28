@@ -30,5 +30,10 @@ def i():
         return render_template("interest_rates.html", result="Waiting……….")
 
 
+@app.route("/transfer_money", methods=["GET", "POST"])
+def transfer_money():
+    return render_template("transfer_money.html")
+
+
 if __name__ == "__main__":
     app.run()
